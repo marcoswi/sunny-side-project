@@ -1,0 +1,94 @@
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== BODY & TYPOGRAPHY ========== */
+body {
+  font-family: 'PT Mono', monospace;
+  background-color: #fffef9;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Caprasimo', serif;
+  color: #1e1e1e;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* ========== LOGO ========== */
+
+.sunny-logo {
+  display: block;
+  margin: 2rem auto 1rem;
+  max-width: 300px;
+}
+
+.logo-container {
+  background-color: #fffef9; /* same as body */
+  padding-bottom: 1rem;
+}
+
+.logo-underline {
+  height: 1px;
+  width: 100%;
+  background-color: #fbbc04; /* Google-style sunny yellow */
+  border-radius: 2px;
+  margin-top: -1.87rem; /* 🟡 this moves the line up */
+
+}
+
+
+/* ========== SLIDER SECTION ========== */
+.slider-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-family: 'PT Mono', monospace;
+  margin: 1rem auto 1rem;
+  text-align: center;
+}
+
+.slider-label input[type="range"] {
+  width: 300px;
+}
+
+/* Responsive adjustment for narrow screens */
+@media (max-width: 750px) {
+  .slider-label {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .slider-info {
+    order: -1;
+    font-size: 1rem;
+  }
+
+  .slider-label input[type="range"] {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+/* ========== MAP CONTAINER ========== */
+.map-container {
+  width: 100%;
+  height: 80vh;
+  margin: 1rem auto;
+}
+
+/* ========== LOADING TEXT ========== */
+.loading {
+  text-align: center;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
