@@ -1,12 +1,48 @@
-# React + Vite
+# ☀️ Sunny Side Map
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive web app that helps users find sunny or shady spots in Madrid based on the time of day. Built using React, Firebase, and Leaflet.
 
-Currently, two official plugins are available:
+🌐 **Live Demo**: [sunny-side-project.web.app](https://sunny-side-project.web.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## Expanding the ESLint configuration
+- 🗺️ Interactive map of Madrid with clickable markers for curated places
+- 🌞 Real-time sun/shade status based on location and hour of day
+- 📅 Time slider to explore sun movement during the day
+- 🔗 Popups with descriptions, website, and Google Maps link
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend**: React + Vite
+- **Map**: Leaflet.js
+- **Data**: Firestore (Firebase)
+- **Hosting**: Firebase Hosting
+- **Sun Calculations**: [SunCalc](https://github.com/mourner/suncalc)
+
+## 🚀 Getting Started (Dev Mode)
+
+1. Clone the repository  
+   `git clone https://github.com/marcoswi/sunny-side-project.git`
+
+2. Install dependencies  
+   `npm install`
+
+3. Run the project  
+   `npm run dev`
+
+
+
+
+## 📁 File Highlights
+
+- `/src/App.jsx`: Main app logic and routes
+- `/src/MapView.jsx`: Leaflet-based map component
+- `/src/utils/sunlightCheck.js`: Core logic to calculate sun/shade
+- `/firebase.js`: Firebase config
+
+## 👨‍💻 Author
+
+GitHub: [@marcoswi](https://github.com/marcoswi)
+
+---
+
